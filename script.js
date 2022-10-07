@@ -37,8 +37,8 @@ function assignBtns() {
 };
 
 buttons.forEach(btn => {
-    const nextGame = document.createElement('button')
-    nextGame.classList.add('next-game')
+    const nextGame = document.createElement('button');
+    nextGame.classList.add('next-game');
     nextGame.innerHTML = `Next Game`;
     
     btn.addEventListener('click', () => {
@@ -48,8 +48,7 @@ buttons.forEach(btn => {
         } else {
             btn.style.backgroundColor = 'red';
             box2.innerHTML = 'Sorry, try again';
-            let btns = [btnA, btnB, btnC]
-            btns.forEach(btn => {
+            buttons.forEach(btn => {
                 if(btn.innerHTML === savedColor) {
                     btn.style.backgroundColor = 'green';
                 }
