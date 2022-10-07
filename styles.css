@@ -15,8 +15,15 @@ body {
 
 .box {
     border: 2px solid black;
-    width: 20vw;
-    height: 40vh;
+    width: 25vw;
+    height: 30vh;
+}
+
+.box2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5vh;
 }
 
 .buttons {
